@@ -1,27 +1,52 @@
-In this DevOps task, you need to build and deploy a full-stack CRUD application using the MEAN stack (MongoDB, Express, Angular 15, and Node.js). The backend will be developed with Node.js and Express to provide REST APIs, connecting to a MongoDB database. The frontend will be an Angular application utilizing HTTPClient for communication.  
+📘 Discover Dollar – DevOps MEAN Assignment
 
-The application will manage a collection of tutorials, where each tutorial includes an ID, title, description, and published status. Users will be able to create, retrieve, update, and delete tutorials. Additionally, a search box will allow users to find tutorials by title.
+This project is a fully containerized MEAN (MongoDB, Express, Angular, Node.js) CRUD application deployed using Docker Compose with Nginx reverse proxy.
+It was developed as part of the Discover Dollar DevOps Engineer Intern assignment.
 
-## Project setup
+🚀 Features
+MEAN stack CRUD application
+Node.js + Express backend
+Angular frontend
+MongoDB database
+Nginx reverse proxy (port 80)
+Fully Dockerized (backend, frontend, mongo, nginx)
+Docker Hub images
+Ready for CI/CD and cloud deployment
 
-### Node.js Server
+🐳 Docker Hub Images
+Backend: https://hub.docker.com/repository/docker/rajgagan10/dd-backend
+Frontend: https://hub.docker.com/repository/docker/rajgagan10/dd-frontend/general
 
-cd backend
+📦 Deployment (Docker Compose)
+1. Clone repo
+git clone https://github.com/rajgagan10/discoverdollar-devops-mean.git
+cd discoverdollar-devops-mean
 
-npm install
+2. Start application
+docker compose up --build
 
-You can update the MongoDB credentials by modifying the `db.config.js` file located in `app/config/`.
+3. Access application
 
-Run `node server.js`
+Open:
+👉 http://localhost
 
-### Angular Client
+📁 Structure
+backend/      → Node.js API  
+frontend/     → Angular App  
+nginx/        → Reverse Proxy  
+docker-compose.yml  
+Dockerfile.backend  
+Dockerfile.frontend  
 
-cd frontend
+📸 Required Screenshots (as per assignment)
+Docker image build & push
+Docker Hub repos
+docker compose up logs
+Application UI
+Nginx config
+CI/CD (if added)
+Cloud VM deployment (if included)
 
-npm install
-
-Run `ng serve --port 8081`
-
-You can modify the `src/app/services/tutorial.service.ts` file to adjust how the frontend interacts with the backend.
-
-Navigate to `http://localhost:8081/`
+👨‍💻 Author
+Gagan RajGitHub: https://github.com/rajgagan10
+Docker Hub: https://hub.docker.com/u/rajgagan10
